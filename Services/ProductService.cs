@@ -43,7 +43,7 @@ namespace ASPNET_Core_API_1.Services
 
         public Product Find(int id)
         {
-            return _db.Product.AsNoTracking().Find(id);
+            return _db.Product.Find(id);
         }
 
         public List<Product> FindAll()
