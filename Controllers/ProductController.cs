@@ -19,7 +19,7 @@ namespace ASPNET_Core_API_1.Controllers
 
         [Produces("application/json")]
         [Consumes("application/json")]
-        [HttpPost("")]
+        [HttpPost]
         public IActionResult Create([FromBody] Product p)
         {
             try
@@ -36,7 +36,7 @@ namespace ASPNET_Core_API_1.Controllers
 
         [Produces("application/json")]
         [Consumes("application/json")]
-        [HttpPut("")]
+        [HttpPut]
         public IActionResult Update([FromBody] Product p)
         {
             try
@@ -67,7 +67,7 @@ namespace ASPNET_Core_API_1.Controllers
         }
 
         [Produces("application/json")]
-        [HttpGet("")]
+        [HttpGet]
         public IActionResult FindAll()
         {
             try
