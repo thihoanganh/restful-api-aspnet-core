@@ -1,4 +1,5 @@
 ﻿using ASPNET_Core_API_1.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -48,7 +49,7 @@ namespace ASPNET_Core_API_1.Services
 
         public List<Product> FindAll()
         {
-            return _db.Product.ToList();
+            return _db.Product.AsNoTracking().ToList();
         }
 
         public Product Update(Product p)
